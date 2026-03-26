@@ -8,7 +8,7 @@ export const NAV_ITEMS = [
   {
     id: "overview",
     label: "Overview",
-    path: "/overview",
+    path: "/",
     Icon: OverviewIcon,
   },
   {
