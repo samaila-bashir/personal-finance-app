@@ -1,10 +1,7 @@
-import { Sidebar } from "./components/sidebar"
+import { RouterProvider } from "react-router-dom"
+
+import { appRouter } from "@/routes/app-router"
 
 export function App() {
-  return (
-    <div className="flex h-svh items-stretch bg-background">
-      <Sidebar />
-      <main className="flex-1" aria-label="Main content" />
-    </div>
-  )
+  return <RouterProvider router={appRouter} />
 }
