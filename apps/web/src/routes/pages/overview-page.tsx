@@ -1,10 +1,11 @@
+import { BudgetsSection } from "@/components/budgets-section"
 import { OverviewCard } from "@/components/overview-card"
 import { PotsSection } from "@/components/pots-section"
 import { TransactionsSection } from "@/components/transactions-section"
 
 export function OverviewPage() {
   return (
-    <div className="px-10 pt-8">
+    <div className="pt-8">
       <h1 className="text-brand-grey-900 text-[32px] leading-[120%] font-bold">
         Overview
       </h1>
@@ -15,9 +16,12 @@ export function OverviewPage() {
         <OverviewCard title="Expenses" value="$1,700.50" tone="light" />
       </div>
 
-      <div className="mt-6 flex flex-col gap-6">
-        <PotsSection />
-        <TransactionsSection />
+      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-[608px_428px]">
+        <div className="flex flex-col gap-6">
+          <PotsSection />
+          <TransactionsSection />
+        </div>
+        <BudgetsSection />
       </div>
     </div>
   )
