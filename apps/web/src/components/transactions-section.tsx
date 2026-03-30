@@ -46,7 +46,7 @@ const TRANSACTIONS = [
 
 export function TransactionsSection() {
   return (
-    <section className="bg-brand-white w-[608px] rounded-xl p-6 shadow-sm">
+    <section className="bg-brand-white h-[519px] w-[608px] rounded-xl p-6 shadow-sm">
       <header className="flex items-center justify-between">
         <h2 className="text-brand-grey-900 text-[20px] leading-[120%] font-bold">
           Transactions

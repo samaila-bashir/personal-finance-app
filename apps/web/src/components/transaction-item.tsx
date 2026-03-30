@@ -17,8 +17,8 @@ export function TransactionItem({
     <div
       className={
         showDivider
-          ? "border-brand-grey-100 flex items-center gap-4 border-b py-4"
-          : "flex items-center gap-4 py-4"
+          ? "border-brand-grey-100 flex h-[81px] items-center gap-4 border-b"
+          : "flex h-[81px] items-center gap-4"
       }
     >
       <img

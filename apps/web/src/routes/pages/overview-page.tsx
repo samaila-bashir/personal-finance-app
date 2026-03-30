@@ -1,6 +1,7 @@
 import { BudgetsSection } from "@/components/budgets-section"
 import { OverviewCard } from "@/components/overview-card"
 import { PotsSection } from "@/components/pots-section"
+import { RecurringBillsSection } from "@/components/recurring-bills-section"
 import { TransactionsSection } from "@/components/transactions-section"
 
 export function OverviewPage() {
@@ -21,7 +22,10 @@ export function OverviewPage() {
           <PotsSection />
           <TransactionsSection />
         </div>
-        <BudgetsSection />
+        <div className="flex flex-col gap-6">
+          <BudgetsSection />
+          <RecurringBillsSection />
+        </div>
       </div>
     </div>
   )
