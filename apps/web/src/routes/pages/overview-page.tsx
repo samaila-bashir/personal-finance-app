@@ -1,5 +1,6 @@
 import { OverviewCard } from "@/components/overview-card"
 import { PotsSection } from "@/components/pots-section"
+import { TransactionsSection } from "@/components/transactions-section"
 
 export function OverviewPage() {
   return (
@@ -14,8 +15,9 @@ export function OverviewPage() {
         <OverviewCard title="Expenses" value="$1,700.50" tone="light" />
       </div>
 
-      <div className="mt-6">
+      <div className="mt-6 flex flex-col gap-6">
         <PotsSection />
+        <TransactionsSection />
       </div>
     </div>
   )

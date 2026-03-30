@@ -12,9 +12,12 @@ export function PageTitle({ title }: { title: string }) {
 
 export function AppLayout() {
   return (
-    <div className="flex h-svh items-stretch">
+    <div className="flex min-h-svh items-stretch">
       <Sidebar />
-      <main className="flex-1 bg-brand-beige-100" aria-label="Main content">
+      <main
+        className="min-w-0 flex-1 bg-brand-beige-100 pb-8"
+        aria-label="Main content"
+      >
         <Outlet />
       </main>
     </div>

@@ -55,7 +55,7 @@ export function Sidebar() {
   return (
     <aside
       className={cn(
-        "bg-brand-grey-900 text-brand-white flex h-full flex-col self-stretch rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none",
+        "bg-brand-grey-900 text-brand-white flex min-h-svh shrink-0 flex-col self-stretch rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none",
         "w-[300px]"
       )}
     >
