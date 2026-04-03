@@ -23,4 +23,12 @@ export default defineConfig([
       },
     },
   },
+  {
+    // useReactTable is listed as incompatible with memoization assumptions; usage here is standard.
+    // https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library
+    files: ['src/routes/pages/transactions/data-table.tsx'],
+    rules: {
+      'react-hooks/incompatible-library': 'off',
+    },
+  },
 ])
