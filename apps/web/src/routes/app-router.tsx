@@ -1,7 +1,8 @@
 import { Navigate, createBrowserRouter } from "react-router-dom"
 
 import { toChildPath } from "@/helpers/routes"
-import { OverviewPage } from "./pages/overview-page"
+import { OverviewPage } from "@/routes/pages/overview-page"
+import { TransactionsPage } from "@/routes/pages/transactions"
 import { AppLayout, PageTitle } from "@/routes/route-components"
 import { NAV_ITEMS } from "@/routes/nav-items"
 
@@ -15,6 +16,8 @@ export const appRouter = createBrowserRouter([
         element:
           item.id === "overview" ? (
             <OverviewPage />
+          ) : item.id === "transactions" ? (
+            <TransactionsPage />
           ) : (
             <PageTitle title={item.label} />
           ),
